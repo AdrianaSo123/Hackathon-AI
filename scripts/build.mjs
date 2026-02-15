@@ -153,7 +153,7 @@ async function main() {
       page: {
         href: "./process.html",
         title: site.process?.headline ?? (site.ui?.sections?.process_title ?? "Process"),
-        description: site.process?.headline ?? site.site?.description,
+        description: "A simple, repeatable path from idea to rollout.",
       },
     },
     {

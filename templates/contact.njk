@@ -12,6 +12,14 @@
     <div class="container">
       <h2>{{ contact.headline }}</h2>
 
+      {% if contact.what_to_include and contact.what_to_include.length %}
+        <ul class="highlights">
+          {% for item in contact.what_to_include %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
       <div class="contact-cta">
         <a class="btn btn-primary" href="{{ hero.primary_cta.href }}">{{ contact.call_to_action }}</a>
       </div>

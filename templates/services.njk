@@ -13,7 +13,7 @@
       <div class="cards">
         {% for s in services %}
           <article class="card" id="{{ s.id }}">
-            <h2 class="card-title">{{ s.title }}</h2>
+            <h3 class="card-title">{{ s.title }}</h3>
             <p class="card-summary">{{ s.summary }}</p>
             {% if s.bullets and s.bullets.length %}
               <ul class="card-bullets">

@@ -15,6 +15,14 @@
       {% for p in about.bio_paragraphs %}
         <p>{{ p }}</p>
       {% endfor %}
+
+      {% if about.highlights and about.highlights.length %}
+        <ul class="highlights">
+          {% for item in about.highlights %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
   </section>
 {% endblock %}

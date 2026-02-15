@@ -51,6 +51,12 @@ about:
     development, I help leaders align stakeholders, choose the right use cases,
     and put lightweight governance in place—so teams can ship safely.
 
+  highlights:
+    - Translate AI opportunities into a prioritized, ROI-focused roadmap
+    - Reduce risk with pragmatic privacy, security, and governance guardrails
+    - Design workflows people actually adopt (not shelfware)
+    - Enable teams with training, templates, and decision-ready artifacts
+
 services:
   - id: ai_training
     title: AI Training & Workshops
@@ -111,6 +117,12 @@ contact:
   linkedin: https://www.linkedin.com/in/adriana-so-24071219b/
   linkedin_label: LinkedIn profile
   call_to_action: Book a Consultation
+
+  what_to_include:
+    - Your industry and team size
+    - The workflows you want to improve (and where time is being lost)
+    - Your data constraints (privacy, compliance, internal tools)
+    - What success looks like in 60–90 days
 
 footer:
   copyright: "© 2026 Adriana So. All rights reserved."
