@@ -119,9 +119,10 @@ a:hover { text-decoration: underline; }
   position: sticky;
   top: 0;
   backdrop-filter: blur(10px);
-  background: color-mix(in oklab, var(--surface) 78%, transparent);
+  background: color-mix(in oklab, var(--surface) 92%, transparent);
   border-bottom: 1px solid var(--border);
   z-index: 10;
+  padding-top: env(safe-area-inset-top);
 }
 
 .header-inner {
@@ -129,7 +130,7 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
-  padding: var(--space-3) 0;
+  padding: var(--space-2) 0;
 }
 
 .brand { display: block; color: inherit; }
