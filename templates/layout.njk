@@ -44,6 +44,11 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-note">{{ footer.copyright }}</div>
+        <nav class="footer-nav" aria-label="Footer">
+          {% for item in ui.navigation %}
+            <a href="{{ item.href }}">{{ item.label }}</a>
+          {% endfor %}
+        </nav>
       </div>
     </footer>
   </body>
