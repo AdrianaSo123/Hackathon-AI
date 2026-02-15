@@ -1,0 +1,20 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">{{ ui.sections.about_title }}</h1>
+      {% if about.headline %}
+        <p class="page-subtitle">{{ about.headline | trim }}</p>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {% for p in about.bio_paragraphs %}
+        <p>{{ p }}</p>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

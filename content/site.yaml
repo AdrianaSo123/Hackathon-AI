@@ -1,0 +1,116 @@
+site:
+  name: Adriana So
+  title: AI & UX Strategy Consultant
+  tagline: Helping mid-size businesses adopt AI responsibly, strategically, and effectively.
+  description: >
+    I help mid-size business leaders turn AI interest into real adoption through
+    practical training, clear strategy, and hands-on implementation support.
+
+ui:
+  navigation:
+    - label: Home
+      href: "./index.html"
+    - label: About
+      href: "./about.html"
+    - label: Services
+      href: "./services.html"
+    - label: Process
+      href: "./process.html"
+    - label: Contact
+      href: "./contact.html"
+  sections:
+    about_title: About
+    services_title: Services
+    process_title: Process
+    contact_title: Contact
+  buttons:
+    view_services: View services
+  labels:
+    email: Email
+    linkedin: LinkedIn
+
+hero:
+  headline: A Practical AI Adoption Plan for Mid-Size Teams
+  subheadline: Clarify use cases, reduce risk, and deliver measurable wins—without the hype.
+  primary_cta:
+    label: Book a Consultation
+    href: "mailto:adriana.so555@gmail.com?subject=Consultation%20request"
+  secondary_cta:
+    label: View services
+    href: "./services.html"
+
+about:
+  headline: From “Should we use AI?” to “What ships next?”
+  bio: |
+    I’m an AI and UX strategist who helps mid-size organizations move from
+    scattered experimentation to sustainable, measurable AI adoption.
+    My work bridges technical capability and human-centered design so AI
+    tools fit real workflows, earn trust, and support business goals.
+
+    With experience in UX research, product design, and AI-powered workflow
+    development, I help leaders align stakeholders, choose the right use cases,
+    and put lightweight governance in place—so teams can ship safely.
+
+services:
+  - id: ai_training
+    title: AI Training & Workshops
+    summary: Executive-friendly training that translates AI into action.
+    bullets:
+      - What GenAI can/can’t do in your context
+      - Hands-on workflows your teams can reuse
+      - Quality checks, safety basics, and guidelines
+    details: >
+      Custom workshops that help your teams build confidence with AI tools and
+      apply them to real work. Sessions cover prompting for repeatable results,
+      AI-assisted research, workflow automation, and responsible AI practices.
+
+  - id: strategy_advisory
+    title: AI Strategy & Advisory
+    summary: A clear plan for AI adoption, grounded in ROI and risk.
+    bullets:
+      - Use-case prioritization tied to measurable outcomes
+      - Vendor-neutral guidance and build/buy decisions
+      - Risk, privacy, and governance guardrails
+    details: >
+      AI readiness assessments, implementation roadmaps, workflow audits, and
+      risk evaluation. I help leadership teams focus on high-impact opportunities,
+      set success metrics, and avoid costly missteps.
+
+  - id: development_support
+    title: AI Development Support
+    summary: Prototypes and implementation support to prove value fast.
+    bullets:
+      - Rapid prototypes to validate the business case
+      - Integrations with your tools and data
+      - Handoff-ready documentation and enablement
+    details: >
+      Support for building AI-powered tools, internal assistants,
+      research pipelines, and automation systems. I assist teams
+      from concept to proof-of-concept deployment.
+
+process:
+  headline: How I Work
+  steps:
+    - title: Discover
+      description: >
+        We align on goals, constraints, and the workflows that matter most.
+    - title: Design
+      description: >
+        I create a practical roadmap with use cases, metrics, and guardrails.
+    - title: Implement
+      description: >
+        We prototype, test with real users, and refine for reliable results.
+    - title: Enable
+      description: >
+        Your team gets training, documentation, and a plan to scale safely.
+
+contact:
+  headline: Let’s Work Together
+  intro: Share your goals, constraints, and timeline. I’ll reply with next steps and a suggested approach.
+  email: adriana.so555@gmail.com
+  linkedin: https://www.linkedin.com/in/adriana-so-24071219b/
+  linkedin_label: LinkedIn profile
+  call_to_action: Book a Consultation
+
+footer:
+  copyright: "© 2026 Adriana So. All rights reserved."

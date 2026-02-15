@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">{{ ui.sections.services_title }}</h1>
+      <p class="page-subtitle">Clear offerings, scoped for real teams.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cards">
+        {% for s in services %}
+          <article class="card" id="{{ s.id }}">
+            <h2 class="card-title">{{ s.title }}</h2>
+            <p class="card-summary">{{ s.summary }}</p>
+            {% if s.bullets and s.bullets.length %}
+              <ul class="card-bullets">
+                {% for b in s.bullets %}
+                  <li>{{ b }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+            <p>{{ s.details | trim }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

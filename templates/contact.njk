@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">{{ ui.sections.contact_title }}</h1>
+      <p class="page-subtitle">{{ contact.intro | trim }}</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>{{ contact.headline }}</h2>
+
+      <div class="contact-cta">
+        <a class="btn btn-primary" href="{{ hero.primary_cta.href }}">{{ contact.call_to_action }}</a>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="contact-label">{{ ui.labels.email }}</div>
+          <a class="contact-link" href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-label">{{ ui.labels.linkedin }}</div>
+          <a class="contact-link" href="{{ contact.linkedin }}" target="_blank" rel="noopener noreferrer">{{ contact.linkedin_label }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

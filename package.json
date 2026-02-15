@@ -1,0 +1,18 @@
+{
+  "name": "ai-consultant-site-generator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && npx --yes http-server dist -p 5173 -c-1",
+    "clean": "node scripts/clean.mjs"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "nunjucks": "^3.2.4"
+  }
+}

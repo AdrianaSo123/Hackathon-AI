@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{% if page and page.title %}{{ site.name }} — {{ page.title }}{% else %}{{ site.name }} — {{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page and page.description %}{{ page.description | trim }}{% else %}{{ site.description | trim }}{% endif %}" />
+
+    <meta property="og:title" content="{% if page and page.title %}{{ site.name }} — {{ page.title }}{% else %}{{ site.name }} — {{ site.title }}{% endif %}" />
+    <meta property="og:description" content="{% if page and page.description %}{{ page.description | trim }}{% else %}{{ site.description | trim }}{% endif %}" />
+    <meta property="og:type" content="website" />
+
+    <meta name="theme-color" content="#5469ff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-name">{{ site.name }}</div>
+          <div class="brand-title">{{ site.title }}</div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          {% for item in ui.navigation %}
+            <a href="{{ item.href }}">{{ item.label }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-note">{{ footer.copyright }}</div>
+      </div>
+    </footer>
+  </body>
+</html>
