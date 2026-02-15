@@ -57,6 +57,11 @@ The build expects these top-level keys in `content/site.yaml`:
 - `contact`: headline/intro/email/linkedin/linkedin_label/call_to_action
 - `footer`: copyright
 
+Notes:
+
+- The site can be configured to **not display your email address** on the page (to reduce scraping) while still providing an **Email** button/link via `mailto:`.
+- The primary hero CTA (`hero.primary_cta`) currently routes to the Contact page by default.
+
 ## Deliverable: Live URL
 
 After deploying, paste your GitHub Pages URL here:

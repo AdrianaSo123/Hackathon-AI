@@ -34,7 +34,7 @@ hero:
   subheadline: Clarify use cases, reduce risk, and deliver measurable wins—without the hype.
   primary_cta:
     label: Book a Consultation
-    href: "mailto:adriana.so555@gmail.com?subject=Consultation%20request"
+    href: "./contact.html"
   secondary_cta:
     label: View services
     href: "./services.html"

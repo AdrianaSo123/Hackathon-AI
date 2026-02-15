@@ -63,7 +63,7 @@
       <p class="contact-intro">{{ contact.intro | trim }}</p>
       <div class="contact-cta">
         <a class="btn btn-primary" href="./contact.html">Contact</a>
-        <a class="btn btn-link" href="{{ hero.primary_cta.href }}">{{ contact.call_to_action }}</a>
+        <a class="btn btn-link" href="mailto:{{ contact.email }}">{{ contact.call_to_action }}</a>
       </div>
     </div>
   </section>
