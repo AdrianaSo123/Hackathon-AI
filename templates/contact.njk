@@ -11,26 +11,19 @@
 
   <section class="section section-alt">
     <div class="container">
-      <div class="contact-split">
-        <div>
-          <h2>{{ contact.headline }}</h2>
-          <p class="contact-note">A short note is perfect—include whatever you have, and we’ll take it from there.</p>
+      <div class="contact-layout">
+        <h2>{{ contact.headline }}</h2>
+        <p class="contact-note">A short note is perfect—include whatever you have, and we’ll take it from there.</p>
 
-          {% if contact.what_to_include and contact.what_to_include.length %}
-            <ul class="highlights">
-              {% for item in contact.what_to_include %}
-                <li>{{ item }}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
+        {% if contact.what_to_include and contact.what_to_include.length %}
+          <ul class="highlights">
+            {% for item in contact.what_to_include %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
 
-          <div class="contact-cta">
-            <a class="btn btn-primary" href="{{ hero.primary_cta.href }}">{{ contact.call_to_action }}</a>
-            <a class="btn" href="mailto:{{ contact.email }}">{{ ui.labels.email }}</a>
-          </div>
-        </div>
-
-        <div class="contact-grid">
+        <div class="contact-grid" aria-label="Contact methods">
           <div class="contact-item">
             <div class="contact-label">{{ ui.labels.email }}</div>
             <a class="contact-link" href="mailto:{{ contact.email }}">{{ email_display | safe }}</a>
@@ -40,6 +33,11 @@
             <div class="contact-label">{{ ui.labels.linkedin }}</div>
             <a class="contact-link" href="{{ contact.linkedin }}" target="_blank" rel="noopener noreferrer">{{ contact.linkedin_label }}</a>
           </div>
+        </div>
+
+        <div class="contact-cta">
+          <a class="btn btn-primary" href="{{ hero.primary_cta.href }}">{{ contact.call_to_action }}</a>
+          <a class="btn" href="mailto:{{ contact.email }}">{{ ui.labels.email }}</a>
         </div>
       </div>
     </div>
