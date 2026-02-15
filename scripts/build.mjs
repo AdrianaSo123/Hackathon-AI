@@ -124,6 +124,7 @@ async function main() {
       template: "index.njk",
       outFile: "index.html",
       page: {
+        href: "./index.html",
         title: site.site?.title,
         description: site.site?.description,
       },
@@ -132,6 +133,7 @@ async function main() {
       template: "about.njk",
       outFile: "about.html",
       page: {
+        href: "./about.html",
         title: site.ui?.sections?.about_title ?? "About",
         description: site.about?.headline ?? site.site?.description,
       },
@@ -140,6 +142,7 @@ async function main() {
       template: "services.njk",
       outFile: "services.html",
       page: {
+        href: "./services.html",
         title: site.ui?.sections?.services_title ?? "Services",
         description: "AI training, strategy, and implementation support for mid-size teams.",
       },
@@ -148,7 +151,8 @@ async function main() {
       template: "process.njk",
       outFile: "process.html",
       page: {
-        title: site.ui?.sections?.process_title ?? "Process",
+        href: "./process.html",
+        title: site.process?.headline ?? (site.ui?.sections?.process_title ?? "Process"),
         description: site.process?.headline ?? site.site?.description,
       },
     },
@@ -156,6 +160,7 @@ async function main() {
       template: "contact.njk",
       outFile: "contact.html",
       page: {
+        href: "./contact.html",
         title: site.ui?.sections?.contact_title ?? "Contact",
         description: site.contact?.intro ?? site.site?.description,
       },
