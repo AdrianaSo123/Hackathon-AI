@@ -104,6 +104,10 @@ a:hover { text-decoration: underline; }
   border-radius: 10px;
 }
 
+*[id] {
+  scroll-margin-top: 96px;
+}
+
 .skip {
   position: absolute;
   left: -9999px;
@@ -118,8 +122,8 @@ a:hover { text-decoration: underline; }
 .site-header {
   position: sticky;
   top: 0;
-  backdrop-filter: blur(10px);
-  background: color-mix(in oklab, var(--surface) 92%, transparent);
+  backdrop-filter: none;
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
   z-index: 10;
   padding-top: env(safe-area-inset-top);
