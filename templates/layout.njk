@@ -43,12 +43,16 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div class="footer-note">{{ footer.copyright }}</div>
-        <nav class="footer-nav" aria-label="Footer">
-          {% for item in ui.navigation %}
-            <a href="{{ item.href }}">{{ item.label }}</a>
-          {% endfor %}
-        </nav>
+        <div class="footer-note">
+          <div class="footer-brand">{{ site.name }}</div>
+          <div class="footer-sub">{{ site.title }}</div>
+          <div class="footer-copy">{{ footer.copyright }}</div>
+        </div>
+
+        <div class="footer-links" aria-label="Contact links">
+          <a href="mailto:{{ contact.email }}">{{ ui.labels.email }}</a>
+          <a href="{{ contact.linkedin }}" target="_blank" rel="noopener noreferrer">{{ ui.labels.linkedin }}</a>
+        </div>
       </div>
     </footer>
   </body>
