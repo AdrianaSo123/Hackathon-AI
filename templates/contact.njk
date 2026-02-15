@@ -1,6 +1,7 @@
 {% extends "layout.njk" %}
 
 {% block content %}
+  {% set email_display = contact.email | replace('@', '@<wbr>') | replace('.', '.<wbr>') %}
   <section class="page-hero">
     <div class="container">
       <h1 class="page-title">{{ ui.sections.contact_title }}</h1>
@@ -32,7 +33,7 @@
         <div class="contact-grid">
           <div class="contact-item">
             <div class="contact-label">{{ ui.labels.email }}</div>
-            <a class="contact-link" href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+            <a class="contact-link" href="mailto:{{ contact.email }}">{{ email_display | safe }}</a>
           </div>
 
           <div class="contact-item">
