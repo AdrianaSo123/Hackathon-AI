@@ -70,11 +70,16 @@ After deploying, paste your GitHub Pages URL here:
 
 ## Proof-of-concept demo (what to show)
 
-1. Open `content/site.yaml` and change one obvious line (e.g., `hero.headline` or a service bullet)
-2. Run `npm run build`
-3. Run `npm run dev` and refresh `http://localhost:5173`
-4. Commit + push to GitHub
-5. Show the GitHub Actions run completing and the Pages site updating
+Use the step-by-step demo script here:
+
+- [DEMO.md](DEMO.md)
+
+Quick checklist:
+
+1. Edit `content/site.yaml` (change `hero.headline` or a service bullet)
+2. Run `npm run build` and `npm run dev` (refresh `http://localhost:5173`)
+3. Commit + push
+4. Show the GitHub Actions run + the updated GitHub Pages site
 
 ## Project structure
 
